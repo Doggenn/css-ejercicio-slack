@@ -1,0 +1,307 @@
+$white: #FFFFFF;
+$purple: #541554;
+$orange: #ECB22E;
+
+.nav1 {
+    color: #{$white};
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	ul {
+		margin: 0;
+		padding: 15px;
+        padding-right: 200px;
+        padding-left: 100px;
+		list-style: none;
+        color: #{$white};
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        // &:hover{
+        //     // text-decoration: underline;
+        // }
+	}
+	
+	li {
+		display: inline-block;
+        color: #{$white};
+        margin-left: 15px;
+        margin-right: 5px;
+        flex: 1;
+        text-align: left;
+        &:hover{
+            text-decoration: underline;
+        }
+	}
+	
+	a {
+		display: block;
+		padding: 6px 12px;
+		text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+	}
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #{$white};
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    select {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #{$white};
+        &:hover{
+            text-decoration: underline;
+        }
+        option {
+            color: #{$white}
+        }
+    }
+}
+
+.header{
+    background-color: #541554;
+    &__text1{
+        color: #FFFFFF;
+        &--h1 {
+            color: #ECB22E;
+        }
+    }
+}
+.a{
+    text-decoration: none;
+    color: black;
+    &-w{
+        color: #{$white};
+        &-m {
+            border-radius: 5px;
+            padding: 10px 20px; /* Padding alrededor del enlace */
+            border: 2px solid #{$white}; 
+        }
+        &-b {
+            display: flex;
+            border-radius: 5px;
+            padding: 10px 20px; /* Padding alrededor del enlace */
+            border: 2px solid #{$white};
+            background-color: #{$purple};
+            font-weight: bold;
+            justify-content: center; /* Alinea el contenido horizontalmente al centro */
+            align-items: center; /* Alinea el contenido verticalmente al centro */
+        }
+    };
+    &-p{
+        color: #{$purple};
+        &-m {
+            display: flex;
+            border-radius: 5px;
+            padding: 10px 20px; /* Padding alrededor del enlace */
+            border: 2px solid #{$purple};
+            background-color: #{$white};
+            font-weight: bold;
+            justify-content: center; /* Alinea el contenido horizontalmente al centro */
+            align-items: center; /* Alinea el contenido verticalmente al centro */
+        }
+        &-f {
+            display: flex;
+            border-radius: 5px;
+            padding: 15px 20%; /* Padding alrededor del enlace */
+            border: 2px solid #{$purple};
+            background-color: #{$white};
+            font-weight: bold;
+            justify-content: center; /* Alinea el contenido horizontalmente al centro */
+            align-items: center; /* Alinea el contenido verticalmente al centro */
+        }
+        &-g {
+            display: flex;
+            border-radius: 5px;
+            padding: 15px 20%; /* Padding alrededor del enlace */
+            border: 2px solid #{$purple};
+            background-color: #4285F4;
+            font-weight: bold;
+            justify-content: center; /* Alinea el contenido horizontalmente al centro */
+            align-items: center; /* Alinea el contenido verticalmente al centro */
+        }
+    }
+}
+.flex {
+    display: flex;
+    &-c{
+        flex-direction: column;
+    }
+    &-ci{
+        flex-direction: column-reverse;
+    }
+    &-ri{
+        flex-direction: row-reverse;
+    }
+    &-r{
+        flex-direction: row;
+    }
+    &-jc{
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+    }
+    &-as{
+        align-items: flex-start
+    }
+}
+.margin {
+    margin: 50px;
+    &-r {
+        margin-right: 50px;
+    }
+    &-l {
+        margin-left: 50px;
+    }
+    &-t {
+        margin-top: 50px;
+    }
+    &-b {
+        margin-bottom: 50px;
+    }
+}
+.margin100{
+    margin: 100px;
+    &-l{
+        margin-left: 100px;
+    }
+    &-r{
+        margin-right: 100px;
+    }
+    &-t{
+        margin-top: 100px;
+    }
+    &-b{
+        margin-bottom: 100px;
+    }
+}
+.margin200{
+    margin: 200px;
+    &-l{
+        margin-left: 200px;
+    }
+    &-r{
+        margin-right: 200px;
+    }
+    &-t{
+        margin-top: 200px;
+    }
+    &-b{
+        margin-bottom: 200px;
+    }
+}
+.margin300{
+    margin: 300px;
+    &-l{
+        margin-left: 300px;
+    }
+    &-r{
+        margin-right: 300px;
+    }
+    &-t{
+        margin-top: 300px;
+    }
+    &-b{
+        margin-bottom: 300px;
+    }
+    &-lr{
+        margin: 0px 300px;
+    }
+}
+.padding100 {
+    padding: 100px;
+    &-l{
+        padding-left: 100px;
+    }
+    &-r{
+        padding-right: 100px;
+    }
+    &-t{
+        padding-top: 100px;
+    }
+    &-b{
+        padding-bottom: 100px;
+    }
+}
+.padding200 {
+    padding: 200px;
+    &-l{
+        padding-left: 200px;
+    }
+    &-r{
+        padding-right: 200px;
+    }
+    &-t{
+        padding-top: 200px;
+    }
+    &-b{
+        padding-bottom: 200px;
+    }
+    &-lr{
+        padding: 0px 200px;
+    }
+}
+.ul {
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    flex: 1;
+    // align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    // &:hover{
+    //     // text-decoration: underline;
+    // }
+    li {
+        display: inline-block;
+        color: #{$white};
+        margin-left: 15px;
+        margin-right: 5px;
+        flex: 1;
+        text-align: left;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #{$white};
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    select {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #{$white};
+        &:hover{
+            text-decoration: underline;
+        }
+        option {
+            color: #{$white}
+        }
+    }
+}
