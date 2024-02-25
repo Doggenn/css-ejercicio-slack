@@ -74,7 +74,7 @@ video{
   height: 450px;
   scrollbar-width: none;
   white-space: wrap; /* Evita el salto de línea */
-  overflow: scroll; /* Oculta el texto que se desborda */
+  overflow: hidden; /* Oculta el texto que se desborda */
   text-overflow: ellipsis; /* Muestra "..." al final del texto */
 }
 .padding30{
@@ -178,7 +178,7 @@ video{
 }
 .box{
     max-width: 100%;
-    height: 500px;
+    height: auto;
     &-bg{
         background-color: #{$purple};
     }
@@ -209,7 +209,7 @@ video{
 }
 .box2{
     max-width: 100%;
-    height: 250px;
+    height: auto;
     &-bg{
         background-color: #{$purple};
     }

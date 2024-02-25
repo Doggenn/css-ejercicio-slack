@@ -154,6 +154,9 @@ $orange: #ECB22E;
     &-as{
         align-items: flex-start
     }
+    &-ww{
+        flex-wrap: wrap;
+    }
 }
 .margin {
     margin: 50px;
